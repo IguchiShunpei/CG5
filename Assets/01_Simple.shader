@@ -1,4 +1,4 @@
-Shader "Unit/01_Simple"
+Shader "Unlit/01_Simple"
 {
 	Properties
 	{

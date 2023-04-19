@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unit_01_Simple
-  m_Shader: {fileID: 4800000, guid: 90c79c444c12d1a46b78212eeda6070a, type: 3}
+  m_Name: Unlit_02_Lambert
+  m_Shader: {fileID: 4800000, guid: 602cafb1f1e48454092bac8c8774ba96, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -21,5 +21,5 @@ Material:
     m_TexEnvs: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 0.30818337, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.5, b: 0, a: 1}
   m_BuildTextureStacks: []
