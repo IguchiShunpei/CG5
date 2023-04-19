@@ -4,6 +4,7 @@ Shader "Unit/01_Simple"
 	{
 		_Color("Color",Color) = (1,0,0,1)
 	}
+
 	SubShader
 	{
 		Pass
