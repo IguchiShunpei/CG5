@@ -42,7 +42,7 @@ Shader "Unlit/02_ADS"
 		  fixed4 frag(v2f i) :SV_Target
 		  {
 			fixed4 color = _Color;
-			float intensity = (dot(normalize(i.normal),_WorldSpaceLightPos0));
+			float intensity = saturate(dot(normalize(i.normal),_WorldSpaceLightPos0));
 		    float3 eyeDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPosition);
 		    float3 lightDir = normalize(_WorldSpaceLightPos0);
 		    i.normal = normalize(i.normal);
