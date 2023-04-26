@@ -48,19 +48,20 @@ Shader "Unlit/Texture"
 				float2 tiling = _MainTex_ST.xy;
 				float2 offset = _MainTex_ST.zw;
 				fixed4 baseColor = tex2D(_MainTex, i.uv * tiling + offset);
-				fixed4 ambient = baseColor * 0.3;
+				fixed4 ambient = baseColor * 0.5;
 
+				//‰A‰ediffuse
 				float intensity = saturate(dot(normalize(i.normal),_WorldSpaceLightPos0));
-				fixed4 deffuse = baseColor * intensity * _LightColor0;
+				fixed4 deffuse = baseColor * step(0.3,intensity) * _LightColor0;
 
+				//‹¾–Ê”½ŽËspecular
 				float3 eyeDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPosition);
 				float3 lightDir = normalize(_WorldSpaceLightPos0);
 				i.normal = normalize(i.normal);
 				float3 reflectDir = -lightDir + 2 * i.normal * dot(i.normal, lightDir);
-
 				fixed4 specular = pow(saturate(dot(reflectDir, eyeDir)), 20) * _LightColor0;
 
-				fixed4 ads = ambient + deffuse + specular;
+				fixed4 ads = ambient + deffuse;
 				return ads;
 			}
 			ENDCG
