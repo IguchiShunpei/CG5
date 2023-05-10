@@ -52,16 +52,16 @@ Shader "Unlit/Texture"
 
 				//‰A‰ediffuse
 				float intensity = saturate(dot(normalize(i.normal),_WorldSpaceLightPos0));
-				fixed4 deffuse = baseColor * step(0.3,intensity) * _LightColor0;
+				fixed4 deffuse = baseColor * smoothstep(0.4,0.5,intensity) * _LightColor0;
 
 				//‹¾–Ê”½ŽËspecular
 				float3 eyeDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPosition);
 				float3 lightDir = normalize(_WorldSpaceLightPos0);
 				i.normal = normalize(i.normal);
 				float3 reflectDir = -lightDir + 2 * i.normal * dot(i.normal, lightDir);
-				fixed4 specular = pow(saturate(dot(reflectDir, eyeDir)), 20) * _LightColor0;
+				fixed4 specular = smoothstep(0.4, 0.5, pow(saturate(dot(reflectDir, eyeDir)), 20)) * _LightColor0;
 
-				fixed4 ads = ambient + deffuse;
+				fixed4 ads = ambient + deffuse + specular;
 				return ads;
 			}
 			ENDCG
