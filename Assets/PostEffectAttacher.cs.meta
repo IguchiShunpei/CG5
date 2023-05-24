@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - shader: {fileID: 4800000, guid: 7bff6a4a0aee52f488b54bfe6030f916, type: 3}
+  - shader: {fileID: 4800000, guid: 2b8efadfb3231b745a8c0c8be76aa65a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
