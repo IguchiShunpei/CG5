@@ -1,4 +1,4 @@
-Shader "Unlit/textureG"
+Shader "Unlit/TextureG"
 {
     Properties
     {
