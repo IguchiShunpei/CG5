@@ -1,4 +1,4 @@
-Shader "Unlit/shiftBlur"
+Shader "Unlit/ShiftBlur"
 {
     Properties
     {
