@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_03_Specular
-  m_Shader: {fileID: 4800000, guid: c10de7f9042944e46947c3d11b30d587, type: 3}
+  m_Name: Unlit_02_ADS
+  m_Shader: {fileID: 4800000, guid: 6f2b8d8f70e56c5459901ea73efc6242, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,5 +20,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 0.072054096, g: 0.41509432, b: 0.15631835, a: 1}
   m_BuildTextureStacks: []
