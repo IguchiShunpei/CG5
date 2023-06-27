@@ -9,6 +9,10 @@ Shader "Unlit/02_ADS"
 	{
 		Pass
 		{
+		  Tags {"LightMode" = "ShadowCaster"}
+		}
+		Pass
+		{
 		  CGPROGRAM
 		  #pragma vertex vert
 		  #pragma fragment frag

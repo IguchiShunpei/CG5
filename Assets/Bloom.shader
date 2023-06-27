@@ -1,4 +1,4 @@
-Shader "Unlit/Bloom"
+Shader "Unlit/CG5_LE3B_04_イグチシュンペイ_Test02_Bloom"
 {
 	Properties
 	{

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_PostEffect
-  m_Shader: {fileID: 4800000, guid: 7bff6a4a0aee52f488b54bfe6030f916, type: 3}
+  m_Name: Unlit_01_Simple
+  m_Shader: {fileID: 4800000, guid: 90c79c444c12d1a46b78212eeda6070a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18,11 +18,8 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 0.19935915, g: 0.9433962, b: 0.4266531, a: 1}
   m_BuildTextureStacks: []
