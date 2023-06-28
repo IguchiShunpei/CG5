@@ -65,7 +65,7 @@ Shader "Unlit/09_03_02"
 				float3 lightDir = normalize(_WorldSpaceLightPos0);
 				i.normal = normalize(i.normal);
 				float3 reflectDir = -lightDir + 2 * i.normal * dot(i.normal, lightDir);
-				fixed4 specular = pow(saturate(dot(reflectDir, eyeDir)), 5) * _LightColor0;
+				fixed4 specular = pow(saturate(dot(reflectDir, eyeDir)), 6) * _LightColor0;
 				fixed4 maskColor = tex2D(_MaskTex, i.uv * _MaskTex_ST.xy);
 				return color + maskColor.r * specular;
 			}
