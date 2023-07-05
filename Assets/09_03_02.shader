@@ -70,6 +70,6 @@ Shader "Unlit/09_03_02"
 				return color + maskColor.r * specular;
 			}
 			  ENDCG
-		   }
+		}
 	}
 }
